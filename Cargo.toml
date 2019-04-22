@@ -1,0 +1,13 @@
+[package]
+name = "rust-dotfile-installer"
+version = "0.1.0"
+authors = ["Drew Hutton <drew.business2308@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+termcolor = "1"
+
+[dependencies.clap]
+version = "2.33"
+default-features = false
+features = ["color"]
