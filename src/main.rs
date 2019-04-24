@@ -6,7 +6,7 @@ use clap::{App, Arg};
 
 fn main() {
     let matches = App::new("New Super Program")
-        .version("1.0")
+        .version("0.1-alpha")
         .author("Drew Hutton")
         .about("Installs dotfiles, modularly and performantly")
         .arg(
@@ -19,7 +19,7 @@ fn main() {
     // Set verbose here so we can use it later
     let verbose = if matches.is_present("v") { true } else { false };
 
-    package_manager_installer::install_package_manager();
+    package_manager_installer::install_package_manager(&verbose);
 
     println!("Hello, world!");
 }

@@ -1,6 +1,6 @@
 use std::process::Command;
 
-pub fn install_package_manager() -> () {
+pub fn install_package_manager(verbose) -> () {
   let output = if cfg!(target_os = "windows") {
     // TODO Windows needs chocolaty
     Command::new("cmd")
