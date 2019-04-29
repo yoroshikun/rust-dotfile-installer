@@ -1,0 +1,11 @@
+title: 'Test Configuration 1'
+brew_formulas:
+  - 'which'
+  - 'nottest'
+brew_cask_packages:
+  - 'visual-studio-code'
+asdf_config:
+  - plugins:
+      - 'nodejs'
+  - node_versions:
+      - '11.14.0'
